@@ -6,6 +6,8 @@ to the terminal
 
 ## Starting The App
 
+Install the dependencies via `yarn` and ensure you are on at least the node version specified in the `.nvmrc`
+
 Docker is required to start prometheus. Use docker-compose against the file for your operating system (windows not included)
 
 ### Example
