@@ -1,0 +1,12 @@
+version: "3.0"
+
+services:
+  prometheus:
+    image: "prom/prometheus:latest"
+    command: --config.file=/etc/prometheus/prometheus.yml --web.enable-lifecycle --web.enable-admin-api
+    environment:
+      - LOGSPOUT=ignore
+    ports:
+      - 9090:9090
+    volumes:
+      - ./docker/prometheus.darwin.yml:/etc/prometheus/prometheus.yml
